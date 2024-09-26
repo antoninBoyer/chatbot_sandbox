@@ -11,5 +11,10 @@ def update_x():
 # Création du toggle avec session_state et rappel lors du changement d'état
 st.toggle('Activer/désactiver', key='toggle', on_change=update_x)
 
+Y=st.text_input("",placeholder="Valeur de Y")
+
+
 # Affichage de la variable X
 st.write(f"Valeur de X : {st.session_state.X}")
+
+st.write(f"Valeur de X : Y")
